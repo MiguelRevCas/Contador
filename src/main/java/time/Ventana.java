@@ -22,7 +22,7 @@ public class Ventana extends JFrame {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		panel = new Panel();
 
-		// Agregar Botones al panel
+		// Agregar Botones al panel!
 		start = new JButton("Start");
 		start.addActionListener(e -> contador.start());
 		panel.add(start);
