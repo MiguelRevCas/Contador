@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.Timer;
 
 public class Ventana extends JFrame {
-	// Variables
+	// Variables 
 	private static final long serialVersionUID = 5892148773647425132L;
 	private Panel panel;
 	private Timer contador;
@@ -33,8 +33,8 @@ public class Ventana extends JFrame {
 
 		// Agregar panel a la ventana
 		this.add(panel);
-		
-		this.setVisible(true);	
+
+		this.setVisible(true);
 
 		// Contador
 		contador = new Timer(1000, e -> {
@@ -44,7 +44,7 @@ public class Ventana extends JFrame {
 		});
 	}
 
-	//CHATGPT REVISAR PARA LAS HORAS
+	// CHATGPT REVISAR PARA LAS HORAS
 	private String formatearTiempo(int segundos) {
 		int horas = segundos / 3600;
 		int minutos = (segundos % 3600) / 60;
@@ -58,15 +58,15 @@ public class Ventana extends JFrame {
 		private JLabel marcador;
 
 		public Panel() {
-			// Etiqueta 
-			//SE PODRIA CREAR EN EL PADRE COMO LOS BOTONES, PRUEBAS
+			// Etiqueta
+			// SE PODRIA CREAR EN EL PADRE COMO LOS BOTONES, PRUEBAS
 			marcador = new JLabel("00:00:00");
 			marcador.setPreferredSize(new Dimension(100, 100));
 
 			this.add(marcador);
 		}
 
-		public JLabel getLabel() {	
+		public JLabel getLabel() {
 			return this.marcador;
 		}
 	}
